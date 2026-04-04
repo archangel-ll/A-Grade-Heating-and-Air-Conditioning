@@ -1,3 +1,4 @@
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { SectionHeading } from './SectionHeading';
 
 const steps = [
@@ -8,12 +9,15 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-16 md:py-24">
+    <section
+      className="bg-cover bg-center py-16 md:py-24"
+      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url(${sectionBackgrounds.steps})` }}
+    >
       <div className="container">
         <SectionHeading eyebrow="How it works" title="Simple process. Fast answers." />
         <div className="grid gap-4 md:grid-cols-3">
           {steps.map((step) => (
-            <div key={step.title} className="rounded-2xl border border-slate-200 p-6">
+            <div key={step.title} className="rounded-2xl border border-slate-200 bg-white p-6">
               <h3 className="text-xl font-semibold">{step.title}</h3>
               <p className="mt-2 text-slate-600">{step.body}</p>
             </div>

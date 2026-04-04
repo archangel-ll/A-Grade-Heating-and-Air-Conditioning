@@ -1,4 +1,4 @@
-# A Grade Heating and Air Conditioning — HVAC Conversion Demo
+# A Grade Heating and Air Conditioning - HVAC Conversion Demo
 
 Premium, conversion-focused Next.js demo site for a Toronto HVAC business.
 
@@ -57,3 +57,5 @@ No custom output path or subdirectory setup is required.
 - Symptom-first support section added near top of homepage.
 - Service pages tightened with symptom-aware, Toronto-local copy.
 - Quote page helper copy updated to reduce form friction.
+
+- Coordinated section background photo placeholders: `src/data/sectionBackgrounds.ts`.

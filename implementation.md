@@ -8,6 +8,9 @@
 - Improved request-quote helper copy to reduce friction and encourage quick submissions
 - Preserved App Router structure and Vercel-friendly deployment assumptions
 
+## Visual coordination
+- Section background photo URLs are centralized in `src/data/sectionBackgrounds.ts` for coordinated, conversion-style section treatments.
+
 ## Editable copy source of truth
 All key business and conversion copy remains centrally editable in:
 - `src/data/siteContent.ts`

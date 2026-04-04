@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import { AlertCircle } from 'lucide-react';
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
 import { SectionHeading } from './SectionHeading';
 
 export function SymptomSection() {
   return (
-    <section className="py-16 md:py-20">
+    <section
+      className="bg-cover bg-center py-16 md:py-20"
+      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.symptoms})` }}
+    >
       <div className="container">
         <SectionHeading
           eyebrow="Symptom-first support"

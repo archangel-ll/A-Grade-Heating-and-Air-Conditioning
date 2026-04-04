@@ -1,4 +1,5 @@
 import { ShieldCheck, BadgeDollarSign, MessageCircleMore } from 'lucide-react';
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { SectionHeading } from './SectionHeading';
 
 const reasons = [
@@ -21,7 +22,10 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-slate-50 py-16 md:py-24">
+    <section
+      className="bg-cover bg-center py-16 md:py-24"
+      style={{ backgroundImage: `linear-gradient(rgba(248,250,252,0.94), rgba(248,250,252,0.94)), url(${sectionBackgrounds.trust})` }}
+    >
       <div className="container">
         <SectionHeading eyebrow="Why homeowners choose A Grade" title="Trust signals grounded in real review themes" />
         <div className="grid gap-5 md:grid-cols-3">

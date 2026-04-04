@@ -1,11 +1,16 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
 import { SectionHeading } from './SectionHeading';
 
 export function ServicesGrid() {
   return (
-    <section className="py-16 md:py-24" id="services">
+    <section
+      className="bg-cover bg-center py-16 md:py-24"
+      id="services"
+      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.services})` }}
+    >
       <div className="container">
         <SectionHeading
           eyebrow="Services"

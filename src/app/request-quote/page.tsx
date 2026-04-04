@@ -14,7 +14,7 @@ export default function RequestQuotePage() {
       <div className="container">
         <SectionHeading
           eyebrow="Request Quote"
-          title="Quick estimate request — callback or email, your choice"
+          title="Quick estimate request - callback or email, your choice"
           description="Prefer a callback or email? Share your issue in one or two lines and we can follow up with practical next steps."
         />
         <ContactForm />

@@ -57,7 +57,7 @@ export const siteContent: SiteContent = {
   postalCode: 'M4P 0E3',
   primaryServiceAreas: ['Toronto', 'Midtown Toronto', 'North York', 'East York', 'Scarborough', 'Etobicoke'],
   heroCopy: {
-    headline: 'Furnace, AC, and heat pump help in Toronto — clear answers before you commit.',
+    headline: 'Furnace, AC, and heat pump help in Toronto - clear answers before you commit.',
     subheadline:
       'If your home is cold, warm, noisy, or uneven, A Grade helps you diagnose the issue, compare options, and book service without pressure-heavy sales talk.',
     primaryCta: 'Book Free Estimate',
@@ -92,7 +92,7 @@ export const siteContent: SiteContent = {
       title: 'Furnace Repair',
       shortDescription: 'Fix furnace heating problems quickly with practical repair-vs-replace guidance.',
       intro:
-        'When your furnace stops heating properly in Toronto, you need a clear diagnosis, realistic timeline, and honest repair options — not vague guesswork.',
+        'When your furnace stops heating properly in Toronto, you need a clear diagnosis, realistic timeline, and honest repair options - not vague guesswork.',
       symptoms: ['Furnace blowing cool air', 'Frequent on/off cycling', 'Unusual rattling or banging sounds', 'Some rooms stay cold'],
       helpWith: ['Heating diagnostics and targeted repair', 'Furnace replacement estimate planning', 'Airflow and thermostat troubleshooting'],
       whyChoose: ['Clear scope before work starts', 'Competitive quote conversations', 'Responsive scheduling for heating issues'],

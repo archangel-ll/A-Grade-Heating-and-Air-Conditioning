@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
 import { trackEvent } from '@/lib/tracking';
 import { SectionHeading } from './SectionHeading';
@@ -10,7 +11,10 @@ export function FAQAccordion({ compact = false }: { compact?: boolean }) {
   const faqs = compact ? siteContent.faqs.slice(0, 2) : siteContent.faqs;
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section className="py-16 md:py-24">
+    <section
+      className="bg-cover bg-center py-16 md:py-24"
+      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url(${sectionBackgrounds.faq})` }}
+    >
       <div className="container">
         <SectionHeading eyebrow="FAQ" title="Common questions from Toronto property owners" />
         <div className="space-y-3">

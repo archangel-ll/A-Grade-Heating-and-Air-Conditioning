@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { PhoneCall, ThermometerSnowflake, Fan, Waves } from 'lucide-react';
 import { siteContent } from '@/data/siteContent';
+import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { trackEvent } from '@/lib/tracking';
 
 const visualHints = [
@@ -14,7 +15,10 @@ const visualHints = [
 
 export function Hero() {
   return (
-    <section className="gradient-hero pb-16 pt-14 md:pb-24 md:pt-20">
+    <section
+      className="bg-cover bg-center pb-16 pt-14 md:pb-24 md:pt-20"
+      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.hero})` }}
+    >
       <div className="container grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }} className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">Toronto HVAC Service</p>
@@ -48,7 +52,7 @@ export function Hero() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-xs text-slate-500">HVAC-themed placeholder visual panel (replace with branded photo/media if available).</p>
+          <p className="mt-4 text-xs text-slate-500">HVAC-themed placeholder visual panel. Swap with branded field photography when available.</p>
         </div>
       </div>
     </section>
