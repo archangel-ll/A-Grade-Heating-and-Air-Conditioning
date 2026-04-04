@@ -3,14 +3,13 @@ import { AlertCircle } from 'lucide-react';
 import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
 import { SectionHeading } from './SectionHeading';
+import { SectionBackdrop } from './SectionBackdrop';
 
 export function SymptomSection() {
   return (
-    <section
-      className="bg-cover bg-center py-16 md:py-20"
-      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.symptoms})` }}
-    >
-      <div className="container">
+    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+      <SectionBackdrop image={sectionBackgrounds.symptoms} align="left" opacity="opacity-[0.08]" />
+      <div className="container relative z-10">
         <SectionHeading
           eyebrow="Symptom-first support"
           title="Common HVAC problems we help solve across Toronto"

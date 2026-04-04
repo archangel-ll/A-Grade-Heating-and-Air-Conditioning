@@ -2,16 +2,14 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
+import { SectionBackdrop } from './SectionBackdrop';
 import { SectionHeading } from './SectionHeading';
 
 export function ServicesGrid() {
   return (
-    <section
-      className="bg-cover bg-center py-16 md:py-24"
-      id="services"
-      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.services})` }}
-    >
-      <div className="container">
+    <section className="relative overflow-hidden bg-slate-50 py-16 md:py-24" id="services">
+      <SectionBackdrop image={sectionBackgrounds.services} opacity="opacity-[0.07]" />
+      <div className="container relative z-10">
         <SectionHeading
           eyebrow="Services"
           title="Toronto HVAC services shaped around real home comfort problems"

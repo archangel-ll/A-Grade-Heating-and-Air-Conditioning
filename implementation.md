@@ -10,6 +10,7 @@
 
 ## Visual coordination
 - Section background photo URLs are centralized in `src/data/sectionBackgrounds.ts` for coordinated, conversion-style section treatments.
+- `src/components/SectionBackdrop.tsx` applies best-practice readability overlays, side anchoring, and controlled opacity so photos support conversion instead of reducing contrast.
 
 ## Editable copy source of truth
 All key business and conversion copy remains centrally editable in:

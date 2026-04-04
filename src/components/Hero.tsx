@@ -6,6 +6,7 @@ import { PhoneCall, ThermometerSnowflake, Fan, Waves } from 'lucide-react';
 import { siteContent } from '@/data/siteContent';
 import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { trackEvent } from '@/lib/tracking';
+import { SectionBackdrop } from './SectionBackdrop';
 
 const visualHints = [
   { icon: ThermometerSnowflake, label: 'Furnace repair clarity' },
@@ -15,11 +16,9 @@ const visualHints = [
 
 export function Hero() {
   return (
-    <section
-      className="bg-cover bg-center pb-16 pt-14 md:pb-24 md:pt-20"
-      style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url(${sectionBackgrounds.hero})` }}
-    >
-      <div className="container grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+    <section className="relative overflow-hidden bg-slate-50 pb-16 pt-14 md:pb-24 md:pt-20">
+      <SectionBackdrop image={sectionBackgrounds.hero} opacity="opacity-15" />
+      <div className="container relative z-10 grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }} className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">Toronto HVAC Service</p>
           <h1 className="mt-3 text-balance text-4xl font-extrabold tracking-tight text-ink md:text-6xl">{siteContent.heroCopy.headline}</h1>

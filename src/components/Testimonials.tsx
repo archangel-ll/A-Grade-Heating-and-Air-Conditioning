@@ -1,14 +1,13 @@
 import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
+import { SectionBackdrop } from './SectionBackdrop';
 import { SectionHeading } from './SectionHeading';
 
 export function Testimonials() {
   return (
-    <section
-      className="bg-cover bg-center py-16 md:py-24"
-      style={{ backgroundImage: `linear-gradient(rgba(234,242,255,0.92), rgba(234,242,255,0.92)), url(${sectionBackgrounds.testimonials})` }}
-    >
-      <div className="container">
+    <section className="relative overflow-hidden bg-sky py-16 md:py-24">
+      <SectionBackdrop image={sectionBackgrounds.testimonials} align="left" opacity="opacity-[0.08]" />
+      <div className="container relative z-10">
         <SectionHeading eyebrow="What customers seem to value most" title="Review-theme proof, summarized" description="Paraphrased feedback themes from publicly available reviews." />
         <div className="grid gap-5 md:grid-cols-3">
           {siteContent.testimonials.map((item) => (

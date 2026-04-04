@@ -1,16 +1,14 @@
 import Link from 'next/link';
 import { sectionBackgrounds } from '@/data/sectionBackgrounds';
 import { siteContent } from '@/data/siteContent';
+import { SectionBackdrop } from './SectionBackdrop';
 import { SectionHeading } from './SectionHeading';
 
 export function BookingCTA() {
   return (
-    <section
-      className="bg-cover bg-center py-16 md:py-24"
-      id="contact"
-      style={{ backgroundImage: `linear-gradient(rgba(11,37,69,0.82), rgba(11,37,69,0.82)), url(${sectionBackgrounds.booking})` }}
-    >
-      <div className="container rounded-3xl bg-navy/90 p-8 text-white md:p-12">
+    <section className="relative overflow-hidden bg-navy py-16 md:py-24" id="contact">
+      <SectionBackdrop image={sectionBackgrounds.booking} opacity="opacity-20" />
+      <div className="container relative z-10 rounded-3xl bg-navy/85 p-8 text-white md:p-12">
         <SectionHeading
           eyebrow="Book or call"
           title="Ready for a clear HVAC estimate in Toronto?"
