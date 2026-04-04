@@ -28,6 +28,7 @@ export function SymptomSection() {
           <Link href="/request-quote" className="rounded-full bg-navy px-5 py-3 font-semibold text-white">Request Quote</Link>
           <Link href="/book-estimate" className="rounded-full border border-slate-300 px-5 py-3 font-semibold">Book Free Estimate</Link>
         </div>
+        <p className="mt-2 text-xs text-slate-500">{siteContent.ctaMicrocopy.fast} • {siteContent.ctaMicrocopy.noObligation}</p>
       </div>
     </section>
   );

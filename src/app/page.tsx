@@ -16,6 +16,12 @@ export default function Home() {
       <Hero />
       <SymptomSection />
       <ServicesGrid />
+      <section className="py-8 md:py-12">
+        <div className="container">
+          <CTAInlineBlock />
+          <p className="mt-3 text-xs text-slate-500">{siteContent.ctaMicrocopy.fast} • {siteContent.ctaMicrocopy.noObligation}</p>
+        </div>
+      </section>
       <WhyChooseUs />
       <HowItWorks />
       <Testimonials />

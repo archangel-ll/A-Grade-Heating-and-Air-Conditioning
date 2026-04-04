@@ -26,6 +26,7 @@ export function ServicesGrid() {
             </article>
           ))}
         </div>
+        <p className="mt-6 text-xs text-slate-500">{siteContent.ctaMicrocopy.fast} • {siteContent.ctaMicrocopy.noObligation}</p>
       </div>
     </section>
   );

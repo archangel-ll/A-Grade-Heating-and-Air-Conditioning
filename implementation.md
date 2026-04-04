@@ -1,11 +1,12 @@
 # Implementation Handoff (Dev)
 
 ## What was improved in this iteration
-- Rewrote hero copy for stronger HVAC intent (furnace/AC/heat pump problem framing)
-- Added a symptom-first homepage section near top for homeowner search-intent matching
-- Tightened trust positioning and review-theme proof language
-- Refined service card and service-page copy with symptom-led, local Toronto language
-- Improved request-quote helper copy to reduce friction and encourage quick submissions
+- Rewrote hero copy to be more urgent/problem-aware and added micro trust + CTA microcopy
+- Added clearer technician-service hero image strategy (in-home HVAC visual placeholder)
+- Added a dedicated "What homeowners say" section with clearly labeled demo placeholder sentiment cards
+- Strengthened differentiation copy in "Why homeowners choose A Grade"
+- Added repeated CTA reinforcement after symptom and services sections
+- Refined service outcomes and kept all new copy in editable typed content
 - Preserved App Router structure and Vercel-friendly deployment assumptions
 
 ## Visual coordination
