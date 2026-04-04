@@ -1,0 +1,19 @@
+import Link from 'next/link';
+import { ServiceItem, siteContent } from '@/data/siteContent';
+
+export function ServiceHero({ service }: { service: ServiceItem }) {
+  return (
+    <section className="gradient-hero py-14 md:py-20">
+      <div className="container max-w-4xl">
+        <p className="text-sm font-semibold uppercase tracking-wide text-accent">Toronto HVAC • {service.title}</p>
+        <h1 className="mt-2 text-4xl font-bold tracking-tight md:text-5xl">{service.title} for Toronto homeowners and light commercial spaces</h1>
+        <p className="mt-4 text-lg text-slate-600">{service.intro}</p>
+        <div className="mt-6 flex gap-3">
+          <Link href="/book-estimate" className="rounded-full bg-navy px-5 py-3 font-semibold text-white">Book Free Estimate</Link>
+          <Link href="/request-quote" className="rounded-full border border-slate-300 px-5 py-3 font-semibold">Request a Quick Quote</Link>
+          <a href={`tel:${siteContent.phone}`} className="rounded-full border border-slate-300 px-5 py-3 font-semibold">Call {siteContent.displayPhone}</a>
+        </div>
+      </div>
+    </section>
+  );
+}
